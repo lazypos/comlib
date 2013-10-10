@@ -5,7 +5,7 @@
 #define HAVE_ARPA_INET_H 1
 
 /* Define to 1 if you have the `clock_gettime' function. */
-/* #undef HAVE_CLOCK_GETTIME */
+#define HAVE_CLOCK_GETTIME 1
 
 /* Define to 1 if you have the `fork' function. */
 #define HAVE_FORK 1
@@ -15,6 +15,9 @@
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1
+
+/* Define to 1 if you have the `rt' library (-lrt). */
+#define HAVE_LIBRT 1
 
 /* Define to 1 if your system has a GNU libc compatible `malloc' function, and
    to 0 otherwise. */
@@ -82,31 +85,31 @@
 #define LSTAT_FOLLOWS_SLASHED_SYMLINK 1
 
 /* Name of package */
-#define PACKAGE "process"
+#define PACKAGE "comlib"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "BUG-REPORT-ADDRESS"
+#define PACKAGE_BUGREPORT "www.dagouge.com"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "FULL-PACKAGE-NAME"
+#define PACKAGE_NAME "comlib"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "FULL-PACKAGE-NAME VERSION"
+#define PACKAGE_STRING "comlib 0.0.0.1"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "full-package-name"
+#define PACKAGE_TARNAME "comlib"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "VERSION"
+#define PACKAGE_VERSION "0.0.0.1"
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "1.0"
+#define VERSION "0.0.0.1"
 
 /* Define to the type of a signed integer type of width exactly 64 bits if
    such a type exists and the standard includes do not define it. */

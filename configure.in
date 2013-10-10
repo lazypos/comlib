@@ -2,8 +2,8 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.68])
-AC_INIT([FULL-PACKAGE-NAME], [VERSION], [BUG-REPORT-ADDRESS])
-AC_CONFIG_SRCDIR([process_deal.cpp])
+AC_INIT(comlib, 0.0.0.1, www.dagouge.com)
+AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
@@ -11,6 +11,8 @@ AC_PROG_CXX
 AC_PROG_CC
 
 # Checks for libraries.
+# FIXME: Replace `main' with a function in `-lrt':
+AC_CHECK_LIB([rt], [main])
 
 # Checks for header files.
 AC_CHECK_HEADERS([arpa/inet.h stdlib.h string.h sys/ioctl.h sys/socket.h unistd.h])
@@ -26,6 +28,6 @@ AC_FUNC_LSTAT_FOLLOWS_SLASHED_SYMLINK
 AC_FUNC_MALLOC
 AC_CHECK_FUNCS([clock_gettime inet_ntoa memset socket strcasecmp])
 
-AM_INIT_AUTOMAKE(process, 1.0)
-#AC_CONFIG_FILES(Makefile, src/Makefile)
+#AC_CONFIG_FILES([Makefile])
+AM_INIT_AUTOMAKE(comlib, 0.0.0.1)
 AC_OUTPUT(Makefile)
