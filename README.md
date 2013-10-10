@@ -1,4 +1,6 @@
-comlib
+comlib 
 ======
+./configure
+make
 
-comlib
+you know!
